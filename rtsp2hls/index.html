@@ -22,7 +22,7 @@
       hls.attachMedia(video);
       hls.on(Hls.Events.MEDIA_ATTACHED, function () {
         console.log("video and hls.js are now bound together !");
-        hls.loadSource("http://192.168.50.242:8080/playlist.m3u8");
+        hls.loadSource("http://192.168.50.242:8080/testing10FPS.m3u8");
         hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
         });
       });

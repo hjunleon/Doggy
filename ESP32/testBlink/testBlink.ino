@@ -145,7 +145,7 @@ void loop() {
 //  strcat(toWrite,",");
 //  strcat(toWrite,hic);
   
-  appendFile(SD, "/dht22.txt", toWrite);
+  appendFile(SD, "/dht22.csv", toWrite);
 //  writeFile(SD, "/hello.txt", "Hello ");
   Serial.printf("Total space: %lluMB\n", SD.totalBytes() / (1024 * 1024));
   Serial.printf("Used space: %lluMB\n", SD.usedBytes() / (1024 * 1024));
